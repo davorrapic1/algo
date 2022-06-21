@@ -21,6 +21,6 @@ const findClosest = (arr, arr2, target) => {
 
 const arr = [1, 7, 4, 11];
 const arr2 = [5, 3, 6, 9];
-const target = 1;
+const target = 11;
 
 findClosest(arr, arr2, target);
