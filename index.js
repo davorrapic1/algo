@@ -6,18 +6,18 @@ const findClosest = (arr, arr2, target) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr2.length; j++) {
       let diff = Math.abs(arr[i] + arr2[j] - target);
-      if (diff <= closestDiff) {
+      if (diff === closestDiff) {
+        closest.push(`${arr[i]}+${arr2[j]}`);
+      } else if (diff < closestDiff) {
+        closest = [`${arr[i]}+${arr2[j]}`];
         closestDiff = diff;
-        closest.push({
-          proximity: diff,
-          val: `${arr[i]}+${arr2[j]}`,
-        });
       }
     }
   }
   console.log(closest);
   return closest;
-};
+}
+  
 
 const arr = [1, 7, 4, 11];
 const arr2 = [5, 3, 6, 9];
