@@ -1,4 +1,4 @@
-// find 2 numbers in arrays  where their sum is closes to target
+
 const findClosest = (arr, arr2, target) => {
   let closest = [];
   let closestDiff = Infinity;
@@ -14,11 +14,11 @@ const findClosest = (arr, arr2, target) => {
       }
     }
   }
+  
   return closest;
 };
 
-const arr = [1, 7, 4, 11, 3, 9];
-const arr2 = [5, 3, 6, 9, 1, 7, 4];
-const target = 11;
-
-console.log(findClosest(arr, arr2, target));
+const array = [1, 7, 4, 11];
+const array2 = [5, 3, 6, 9];
+const findClosestTo = 11;
+console.log(findClosest(array, array2, findClosestTo));
